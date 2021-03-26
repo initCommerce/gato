@@ -1,4 +1,4 @@
-# Lodash dart
+# Lodash_utility
 A dart utility library inspired by javascript lodash library.
 
 ## Get
