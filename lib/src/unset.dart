@@ -1,4 +1,4 @@
-/// Unset from a `Map` by path
+/// Unset a key from a `Map` by path
 ///
 /// Use dot notation in [path] to access nessted keys
 /// Returns updated map
