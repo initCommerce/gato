@@ -1,6 +1,7 @@
-/// Unset a key from a `Map` by path
+/// Removes the property at path of map.
 ///
 /// Use dot notation in [path] to access nessted keys
+///
 /// Returns updated map
 ///
 /// ```dart
