@@ -8,7 +8,7 @@ Add `gato: ^0.0.2` to your `pubspec.yaml` dependencies:
 
 ```yaml
 dependencies:
-  gato: ^0.0.1
+  gato: ^0.0.2
 ```
 
 **2. Import it**
@@ -26,11 +26,13 @@ gato.get<T>(Map<String, dynamic> map, String path)
 ```
 
 **Arguments**
-    - map *(Map<String, dynamic>)*: The map you want to get value from.
-    - path *(String)*: The path of the property to get.
+
+- map *(Map<String, dynamic>)*: The map you want to get value from.
+- path *(String)*: The path of the property to get.
 
 **Returns**
-    - *T|null*: Returns the resolved value or `null` if the [path] is not found.
+
+- *T|null*: Returns the resolved value or `null` if the [path] is not found.
 
 **Example**
 ```dart
@@ -47,12 +49,14 @@ Map<String, dynamic> set<T>(Map<String, dynamic> map, String path, T value)
 ```
 
 **Arguments**
-    - map *(Map<String, dynamic>)*: The map to modify.
-    - path *(String)*: The path of the property to set.
-    - value *(T)*: The value to set.
+
+- map *(Map<String, dynamic>)*: The map to modify.
+- path *(String)*: The path of the property to set.
+- value *(T)*: The value to set.
 
 **Returns**
-    - *Map<String, dynamic>*: Returns updated map.
+
+- *Map<String, dynamic>*: Returns updated map.
 
 **Example**
 ```dart
@@ -69,11 +73,13 @@ Map<String, dynamic> unset(Map<String, dynamic> map, String path)
 ```
 
 **Arguments**
-    - map *(Map<String, dynamic>)*: The map to modify.
-    - path *(String)*: The path of the property to remove.
+
+- map *(Map<String, dynamic>)*: The map to modify.
+- path *(String)*: The path of the property to remove.
 
 **Returns**
-    - *Map<String, dynamic>*: Returns updated map.
+
+- *Map<String, dynamic>*: Returns updated map.
 
 **Example**
 ```dart
