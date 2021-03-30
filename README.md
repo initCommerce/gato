@@ -1,4 +1,4 @@
-# Lodash_utility
+# Gato
 A dart utility library inspired by javascript lodash library.
 
 ## Get

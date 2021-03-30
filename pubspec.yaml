@@ -1,9 +1,9 @@
-name: lodash_utility
+name: gato
 description: A dart utility library inspired by javascript lodash library.
 version: 0.0.1
 author: Mehdi Zarepour
-homepage: https://github.com/mehdizarepour/lodash_dart
-repository: https://github.com/mehdizarepour/lodash_dart
+homepage: https://github.com/mehdizarepour/gato
+repository: https://github.com/mehdizarepour/gato
 
 environment:
   sdk: ">=2.12.0 <3.0.0"

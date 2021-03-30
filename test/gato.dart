@@ -1,6 +1,6 @@
 import 'package:test/test.dart';
 
-import '../lib/lodash_utility.dart';
+import '../lib/gato.dart';
 
 void main() {
   test('get by path', () {

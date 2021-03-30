@@ -1,4 +1,4 @@
-import '../lib/lodash_utility.dart';
+import '../lib/gato.dart';
 
 void main() {
   Map<String, dynamic> map = {
