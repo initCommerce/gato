@@ -1,3 +1,7 @@
+## 0.0.3+3
+
+* Edit readme
+
 ## 0.0.3+2
 
 * Add logo to readme
