@@ -6,11 +6,11 @@ Gato is a dart utility library inspired by javascript lodash library.
 ## Installation
 **1. Depend on it**
 
-Add `gato: ^0.0.2` to your `pubspec.yaml` dependencies:
+Add `gato: ^0.0.3` to your `pubspec.yaml` dependencies:
 
 ```yaml
 dependencies:
-  gato: ^0.0.2
+  gato: ^0.0.3
 ```
 
 **2. Import it**
