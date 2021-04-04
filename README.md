@@ -1,6 +1,8 @@
 # Gato
 Gato is a dart utility library inspired by javascript lodash library.
 
+**Show some ❤️ and star the repo to support the project**
+
 ## Installation
 **1. Depend on it**
 
@@ -22,13 +24,14 @@ import 'package:gato/gato.dart' as gato;
 ### Get
 Get value from a `Map` by path. Use dot notation in [path] to access nessted keys.
 ```dart
-gato.get<T>(Map<String, dynamic> map, String path)
+gato.get<T>(Map<String, dynamic> map, String path, {T Function(dynamic)? converter})
 ```
 
 **Arguments**
 
 - map *(`Map<String, dynamic>`)*: The map you want to get value from.
 - path *(`String`)*: The path of the property to get.
+- converter *(`T Function(dynamic)?`)*: The function to cast the value to a custom type
 
 **Returns**
 
@@ -36,10 +39,11 @@ gato.get<T>(Map<String, dynamic> map, String path)
 
 **Example**
 ```dart
-Map map = {'a': {'b': 1}};
+Map map = {'a': {'b': 1}, 'c': '0xFFB74093'};
 var b = gato.get(map, 'a.b');
-or
 var b = gato.get<int>(map, 'a.b');
+
+Color color = gato.get<Color>(map, 'c', converter: (value) => Color(value));
 ```
 
 ### Set

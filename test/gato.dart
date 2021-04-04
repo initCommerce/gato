@@ -18,6 +18,15 @@ void main() {
 
       expect(get(map, 'a'), null);
     });
+
+    test('by coverter', () {
+      Map<String, dynamic> map = {'name': 'John'};
+      var person =
+          get<Person>(map, 'name', converter: (value) => Person(value));
+
+      expect(person is Person, true);
+      expect(person.name, 'John');
+    });
   });
 
   group('set', () {
@@ -48,4 +57,10 @@ void main() {
     map = unset(map, 'a.b');
     expect(map['a']!['b'], null);
   });
+}
+
+class Person {
+  final name;
+
+  Person(this.name);
 }
