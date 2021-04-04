@@ -1,6 +1,6 @@
 name: gato
 description: Gato is a dart utility library inspired by javascript lodash library.
-version: 0.0.3+1
+version: 0.0.3+2
 author: Mehdi Zarepour
 homepage: https://github.com/mehdizarepour/gato
 repository: https://github.com/mehdizarepour/gato

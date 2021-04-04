@@ -1,4 +1,7 @@
 # Gato
+![gato-logo](https://user-images.githubusercontent.com/8446770/113517293-40cff100-9594-11eb-9218-3445fd6bada5.png)
+[![Version](https://img.shields.io/pub/v/gato.svg)](https://pub.dev/packages/gato)
+![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)
 Gato is a dart utility library inspired by javascript lodash library.
 
 **Show some ❤️ and star the repo to support the project**
