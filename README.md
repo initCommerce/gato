@@ -43,7 +43,7 @@ Map map = {'a': {'b': 1}, 'c': '0xFFB74093'};
 var b = gato.get(map, 'a.b');
 var b = gato.get<int>(map, 'a.b');
 
-Color color = gato.get<Color>(map, 'c', converter: (value) => Color(value));
+Color color = gato.get<Color>(map, 'c', converter: (value) => Color(int.parse(value)));
 ```
 
 ### Set

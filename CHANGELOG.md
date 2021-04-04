@@ -1,3 +1,7 @@
+## 0.0.3+1
+
+* Edit docs
+
 ## 0.0.3
 
 * Add `converter` option to `get` method
