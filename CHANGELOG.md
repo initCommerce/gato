@@ -1,3 +1,8 @@
+## 0.0.4
+
+* Fix #1
+* Set and Unset to an empty map
+
 ## 0.0.3+3
 
 * Edit readme
