@@ -47,12 +47,26 @@ void main() {
       map = set<String>(map, 'a.b', 'gato');
       expect(map['a']!['b'], 'gato');
     });
+
+    test('to an empty map', () {
+      Map<String, dynamic> map = {};
+
+      map = set(map, 'a.c.d.e', 2);
+      expect(map['a']!['c']['d']['e'], 2);
+    });
   });
 
   test('unset by path', () {
     Map<String, dynamic> map = {
       'a': {'b': 1}
     };
+
+    map = unset(map, 'a.b');
+    expect(map['a']!['b'], null);
+  });
+
+  test('unset on empty map', () {
+    Map<String, dynamic> map = {};
 
     map = unset(map, 'a.b');
     expect(map['a']!['b'], null);
