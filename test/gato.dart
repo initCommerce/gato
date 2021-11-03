@@ -13,6 +13,16 @@ void main() {
       expect(get(map, 'a.c'), null);
     });
 
+    test('when path does not exist', () {
+      Map<String, dynamic> map = {
+        'a': {
+          'b': {'f': 'g'}
+        }
+      };
+
+      expect(get(map, 'a.b.c.d'), null);
+    });
+
     test('from empty map', () {
       Map<String, dynamic> map = {};
 
@@ -25,7 +35,7 @@ void main() {
           get<Person>(map, 'name', converter: (value) => Person(value));
 
       expect(person is Person, true);
-      expect(person.name, 'John');
+      expect(person!.name, 'John');
     });
   });
 
