@@ -4,14 +4,18 @@
 ///
 /// Use [convertor] to cast the valeu to your custom type
 ///
-/// Returns [T]
+/// Returns [T?]
 ///
 /// ```dart
 /// Map map = {'a': {'b': 1}};
 /// get(map, 'a.b');
 /// ```
-T get<T>(map, String path, {T Function(dynamic)? converter}) {
+T? get<T>(map, String path, {T Function(dynamic)? converter}) {
   List<String> keys = path.split('.');
+
+  if (map[keys[0]] == null) {
+    return null;
+  }
 
   if (keys.length == 1) {
     return converter != null ? converter(map[keys[0]]) : map[keys[0]] as T;
